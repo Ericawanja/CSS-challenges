@@ -1,0 +1,14 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+.wrapper {
+  background-image: linear-gradient(rgba(34, 222, 9, 0.4), rgba(0, 0, 0, 0.4)),
+    url(./images/images.jpg);
+  background-repeat: no-repeat;
+  min-width: 100%;
+  min-height: 100%;
+  background-size: cover;
+}
