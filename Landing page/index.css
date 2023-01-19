@@ -10,27 +10,132 @@ body{
     background-color: rgb(0, 0, 0);
     color: white;
     font-size: 1.8rem;
-    padding: 25px 50px;
+    padding: 20px 0px;
     display: flex;
     justify-content: space-between;
+    align-items: baseline;
 }
 .right button{
     outline: none;
     background-color: transparent;
-    padding: 10px;
+    
     font-size: 1.4rem;
     color: white;
-    border: 1px solid white;
+ 
     border-radius: 7px;
 }
 .right{
     display: flex;
     gap: 15px;
+    padding-right: 40px;
+   
 }
-.requestBtn{
+.requestBtn button{
     background-color: rgb(25,26,27);
+    border: 1px solid white;
+    padding: 10px 19px;
 
 }
-.signIn{
-    background-color: ;
+.signIn button{
+    background-color:rgb(76,95,213) ;
+    padding: 10px 19px;
+}
+.hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(218,219,241);
+    height: 400px;
+}
+.hero .heading{
+    font-size: 4rem;
+    font-weight: 600;
+}
+.hero .helpInput{
+    background-color: yellowgreen;
+}
+.hero .helpInput input{
+    width: 600px;
+    padding: 20px 25px;
+    outline: none;
+    font-size: 1.2rem;
+    border-radius: 4px;
+    border: 1px solid black;
+   
+}
+.helpInput input:focus{
+    border: 1px solid rgb(76,95,213);
+    
+}
+svg{
+    width: 90px;
+    height: 90px;
+}
+.mainSection{
+    display: grid;
+    grid-template-columns: 450px 450px;
+    gap: 20px;
+    background-color: rgb(255, 255, 255);
+    justify-content: center;
+    padding: 30px 0;
+}
+.mainSection > div{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+   
+    padding: 5px;
+}
+.sectionDetails{
+    display: flex;
+    flex-direction: column;
+    
+   
+}
+.details{
+color:rgb(136, 137, 165) ;
+font-size: 1.3rem;
+}
+.linkToDetails{
+    padding: 10px 0;
+}
+.linkToDetails a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: blue;
+}
+.title{
+    color: black;
+    font-weight: 800;
+    font-size: 1.3rem;
+}
+.footer{
+    background-color: rgb(0,0,0);
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 0;
+    justify-content: space-evenly;
+}
+.footer div{
+    display: flex;
+    flex-direction: column;
+  
+    
+}
+.footerHeading{
+    font-size: 1.3rem;
+    line-height: 2.5;
+
+}
+.contactHeading{
+    line-height: 3;
+    font-size: 1.1rem;
+}
+.copyright{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    font-size: 1.05rem;
 }
