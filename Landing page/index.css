@@ -117,6 +117,7 @@ font-size: 1.3rem;
     flex-wrap: wrap;
     padding: 20px 0;
     justify-content: space-evenly;
+    flex-direction: row-reverse;
 }
 .footer div{
     display: flex;
