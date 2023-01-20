@@ -1,0 +1,72 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: white;
+}
+.cardsContainer {
+  display: flex; 
+
+  width: 600px;
+}
+
+.cardsContainer div{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+ 
+
+}
+.sedans{
+    background-color:hsl(31, 77%, 52%) ;
+}
+.suvs{
+    background-color: hsl(184, 100%, 22%);
+}
+.luxury{
+    background-color: hsl(179, 100%, 13%) ;
+}
+.cardIcon{
+    padding: 10px 0 20px;
+}
+.cardTitle{
+    font-weight: 700;
+    font-size: 1.5rem;
+    padding-bottom: 15px;
+    font-family: 'Big Shoulders Display', cursive;
+}
+.cardBody{
+    font-size: .9rem;
+    word-spacing: 2px;
+    letter-spacing: 1.5px;
+    color: rgb(226, 227, 228);
+    font-family: 'Lexend Deca', sans-serif;
+}
+.btn{
+    padding: 40px 10px;
+
+}
+.btn a{
+    text-decoration: none;
+    cursor: pointer;
+    background-color: white;
+    
+    padding: 10px 15px;
+    border-radius: 20px;
+    font-family: 'Lexend Deca', sans-serif;
+   
+}
+.sedans .btn a{
+    color: hsl(31, 77%, 52%);
+
+}
+.suvs .btn a{
+    color: hsl(184, 100%, 22%);
+}
+.luxury .btn a{
+    color: hsl(179, 100%, 13%) ;
+}
