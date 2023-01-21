@@ -1,19 +1,137 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-.wrapper{
-    width: 70%;
-    background-color: white;
+.wrapper {
+  width: 80%;
+  background-color: white;
+  padding: 20px 80px;
 }
-body{
-    background-color: gainsboro;
+body {
+  background-color: gainsboro;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: "Inter", sans-serif;
+}
+.heroImg img {
+  width: 100%;
+}
+.topHeader {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  align-items: center;
+}
+.navbar {
+  display: flex;
+  gap: 10px;
+  font-weight: 400;
+}
+.heroSection {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 27% 33% 40%;
+  grid-template-areas: " img img aside"
+   "heading details  aside"
+   "card1 card2 card3"
+   ;
+ 
+}
+.heroImg {
+  grid-area: img;
+}
+.heroHeader {
+  grid-area: heading;
+  font-weight: 800;
+  font-size: 1.8rem;
+}
+.heroDetails {
+  grid-area: details;
+  display: flex;
+  flex-direction: column;
+}
+.details {
+  color: hsl(0, 0%, 0%);
+  font-size: .8rem;
+}
+.moreBtn {
+  padding: 30px 0;
+}
+.moreBtn a {
+  text-decoration: none;
+  background-color: hsl(5, 85%, 63%);
+  color: white;
+  padding: 10px 25px;
+}
+.aside {
+  grid-area: aside;
+  background-color:hsl(240, 100%, 5%) ;
+  padding: 20px;
+  
+}
+.asideHeader{
+    color: hsl(35, 77%, 62%);
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 3;
+}
+.newsHeader{
+    color: white;
+    font-size: .9rem;
+    font-weight: 600;
+    
+}
+.newsDetails{
+    color: rgb(175, 176, 177);
+    padding-bottom: 10px;
+}
+.newsList{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
+    flex-direction: column;
+    gap: 20px;
 }
-.heroImg img{
-    width: 100%;
+.news{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-bottom: 1px solid rgb(163, 161, 161);
+}
+.card1{
+    grid-area: card1;
+}
+.card2{
+    grid-area: card2;
+}
+.card3{
+    grid-area: card3;
+   
+}
+.card{
+    display: flex;
+    gap: 5px;
+       
+}
+.card img{
+    width: 70px;
+    
+}
+.cardDetails{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.no{
+    font-size: 1.2rem;
+}
+.cardHeader{
+    font-weight: 800;
+    color: black;
+
+}
+.cardDetails{
+    font-size: .7rem;
+    color: rgb(186, 184, 184);
 }
