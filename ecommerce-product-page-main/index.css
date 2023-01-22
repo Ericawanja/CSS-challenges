@@ -147,7 +147,7 @@ body {
   cursor: pointer;
 }
 .checkout {
-    display: none;
+  display: none;
   position: absolute;
   top: 30px;
   z-index: 1;
@@ -162,9 +162,9 @@ body {
   display: flex;
   justify-content: space-between;
 }
-.checkoutHeader h2{
-     padding: 10px;
-     font-size: 1rem;
+.checkoutHeader h2 {
+  padding: 10px;
+  font-size: 1rem;
 }
 
 .cartImg img {
@@ -175,32 +175,32 @@ body {
   display: flex;
   gap: 10px;
   padding: 10px;
- align-items: center;
+  align-items: center;
 }
 .cartProductDetails {
   width: 250px;
 }
-.cartProductName{
-    font-size: .8rem;
+.cartProductName {
+  font-size: 0.8rem;
 }
-.totalPrice{
-    line-height: 2;
-    font-weight: 600;
+.totalPrice {
+  line-height: 2;
+  font-weight: 600;
 }
-.checkoutBtn{
-    background-color: hsl(26, 100%, 55%);
-    padding: 10px;
-    margin:8px  25px;
-    border-radius: 10px;
-    text-align: center;
-    color: white;
+.checkoutBtn {
+  background-color: hsl(26, 100%, 55%);
+  padding: 10px;
+  margin: 8px 25px;
+  border-radius: 10px;
+  text-align: center;
+  color: white;
 }
 
 /**Menu*/
-.menu{
-    display: none;
+.menu {
+  display: none;
 }
-.mobileNavbar{
+.mobileNavbar {
   position: absolute;
   display: flex;
   flex-direction: column;
@@ -210,22 +210,75 @@ body {
   padding: 60px 30px;
   top: 40px;
 }
-.mobileNavbar span:hover{
+.mobileNavbar span:hover {
   color: hsl(26, 100%, 55%);
   cursor: pointer;
   font-size: 1.2rem;
-
 }
-.closeMenu{
+.closeMenu {
   text-align: right;
 }
-@media only screen and (max-width: 950px){
-  
-    .navbar{
-        display: none;
-    }
-    .menu{
-        display: block;
-        cursor: pointer;
-    }
+@media only screen and (max-width: 950px) {
+  .navbar {
+    display: none;
+  }
+  .menu {
+    display: block;
+    cursor: pointer;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .productContainer {
+    grid-template-columns: 100%;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .wrapper{
+    padding: 15px;
+    width: 95%;
+  }
+  .checkout{
+    width: 100%;
+  }
+ 
+  .avatar {
+    display: none;
+  }
+  .logo {
+    display: none;
+  }
+  .thumbnails{
+    display: none;
+  }
+  .productContainer{
+    padding: 10px 0;
+    gap: 10px;
+  }
+  .product{
+    padding: 0;
+    
+  }
+  .product img{
+   
+    margin: auto;
+  }
+  .productDetails .details{
+    padding: 10px 0;
+
+  }.pricing{
+    display: flex;
+    justify-content: space-between;
+  }
+  .cartManipulations{
+    margin-top: 15px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+ 
+  .logo {
+    display: none;
+  }
 }
