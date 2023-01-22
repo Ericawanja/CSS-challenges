@@ -145,4 +145,5 @@ body {
   gap: 10px;
   justify-content: center;
   color: #ffffff;
+  cursor: pointer;
 }
