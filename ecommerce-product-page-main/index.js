@@ -125,3 +125,14 @@ document.querySelector(".deleteAll").addEventListener("click", () => {
   document.querySelector(".cartTotal").innerText = 0;
   displayOrHideCartIcons(0);
 });
+
+
+//open and close menu
+
+document.querySelector(".menu").addEventListener("click", ()=>{
+  document.querySelector(".mobileNavbar").style.display = 'flex'
+})
+
+document.querySelector(".closeMenu").addEventListener("click", ()=>{
+  document.querySelector(".mobileNavbar").style.display = 'none'
+})
