@@ -4,20 +4,19 @@ const minus = document.querySelector(".minus");
 const product = document.querySelector(".product");
 
 //display or not display add to cart btn
-
+const deleteIcon = document.querySelector(".deleteAll");
 const manipulationIcons = document.querySelector(".cartPlusMinusIcons");
 const btn = document.querySelector(".addCart");
 const total = document.querySelector(".cartTotal").innerText;
 const displayOrHideCartIcons = (val) => {
   if (val <= 0) {
-  
-
     manipulationIcons.style.display = "none";
-    btn.style.display = 'block'
+    deleteIcon.style.display = "none";
+    btn.style.display = "block";
   } else {
     manipulationIcons.style.display = "flex";
-    btn.style.display = 'none'
- 
+    btn.style.display = "none";
+    deleteIcon.style.display = "block";
   }
 };
 
@@ -31,7 +30,7 @@ const addCart = () => {
   document.querySelector(".value").innerText = newTotal;
   document.querySelector(".cartTotal").innerText = newTotal;
 
-displayOrHideCartIcons(+newTotal)
+  displayOrHideCartIcons(+newTotal);
 };
 
 plus.addEventListener("click", addCart);
@@ -84,4 +83,45 @@ for (let i = 0; i < thumbnails.length; i++) {
 }
 
 btn.addEventListener("click", addCart);
-displayOrHideCartIcons(0)
+displayOrHideCartIcons(0);
+
+//open and close checkout
+
+const closeCheckout = document.querySelector(".closeCheckout");
+const openCheckout = document.querySelector(".openCheckout");
+const checkout = document.querySelector(".checkout");
+
+openCheckout.addEventListener("click", () => {
+  if (checkout.style.display === "block") {
+    checkout.style.display = "none";
+  } else {
+    const num = document.querySelector(".cartTotal").innerText;
+    const priceHolder = document.querySelector(".totalPrice");
+    const detailsHolder = document.querySelector(".cartDetails");
+    if (+num > 0) {
+      let total = 125 * +num;
+     
+      detailsHolder.innerHTML = `
+                  <span class="cartImg">
+                  <img src="./images/image-product-1-thumbnail.jpg" alt="" />
+                </span>
+                <span class="cartProductDetails">
+                  <p class="cartProductName">Fall Limited Edition Sneakers</p>
+                  <p class="totalPrice">Total : $ ${total}</p>
+                </span>`;
+                document.querySelector(".checkoutBtn").style.display = 'block'
+    } else {
+      const detailsHolder = document.querySelector(".cartDetails");
+      detailsHolder.innerText = `No items`;
+      document.querySelector(".checkoutBtn").style.display = 'none'
+    }
+    checkout.style.display = "block";
+  }
+});
+
+//deleteALL
+document.querySelector(".deleteAll").addEventListener("click", () => {
+  document.querySelector(".value").innerText = 0;
+  document.querySelector(".cartTotal").innerText = 0;
+  displayOrHideCartIcons(0);
+});
