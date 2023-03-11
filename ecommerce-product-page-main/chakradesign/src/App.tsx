@@ -1,12 +1,14 @@
 import React from 'react';
-import logo from './logo.svg';
+
 import './App.css';
 import Header from './components/Header';
+import Pricing from './components/Pricing';
 
 function App() {
   return (
     <div className="App">
       <Header/>
+      <Pricing/>
     </div>
   );
 }
