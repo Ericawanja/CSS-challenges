@@ -5,6 +5,7 @@ import {
   Flex,
   Heading,
   HStack,
+  Icon,
   Text,
   VStack,
 } from "@chakra-ui/react";
@@ -12,11 +13,11 @@ import React from "react";
 
 function Sumary() {
   return (
-    <Center width={'100vw'} height='100vh' bg='blackAlpha.100'>
+    <Center width={"100vw"} height="100vh" bg="blackAlpha.100">
       <Box bg="white" maxW={"600px"}>
         <Flex>
           <VStack
-            w="300px"
+            maxW="300px"
             bg="rgb(97,65,252)"
             px={"50px"}
             py="18px"
@@ -48,9 +49,28 @@ function Sumary() {
               You have scored 65% higher than people who have taken this tests
             </Text>
           </VStack>
-          <Box>
-            2<Heading>Summary</Heading>
-          </Box>
+          <VStack>
+            <Heading>Summary</Heading>
+            <HStack>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                fill="none"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  stroke="#F55"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.25"
+                  d="M10.833 8.333V2.5l-6.666 9.167h5V17.5l6.666-9.167h-5Z"
+                />
+              </svg>
+              <Text>Reaction</Text>
+              <Text>80/100</Text>
+            </HStack>
+          </VStack>
         </Flex>
       </Box>
     </Center>
