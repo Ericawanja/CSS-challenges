@@ -47,7 +47,7 @@ function Pricing() {
               Get Started
             </Button>
           </Box>
-          <Box bg="white" p="60px" fontSize="18px">
+          <Box bg="white" p={['32px', '32px', '60px']} fontSize="18px">
             <Text textAlign="left">
               Acess these features when you get this pricing package for your
               business
